@@ -1,0 +1,77 @@
+.marker {
+  width: 30px; 
+  height: 30px; 
+  background-color: #4CAF50; 
+  border-radius: 50%; 
+  border: 2px solid #ffffff; 
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-weight: bold; 
+  color: #ffffff;
+  font-size: 16px; 
+}
+
+.dashboard-container {
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+  max-height: 400px;
+  border-radius: 10px;
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+  margin-bottom: 20px;
+}
+
+.user-images {
+  margin-top: 20px;
+}
+
+.user-images img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.user-images p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust minmax value for column width */
+  gap: 20px; /* Adjust gap between images */
+}
+
+.image {
+  width: 100%; /* Ensure images fill their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Marker popup styles */
+.mapboxgl-popup {
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.mapboxgl-popup-content {
+  padding: 10px;
+}
+
+/* Popup image styles */
+.popup-image {
+  max-width: 200px;
+  height: auto;
+}
+.marker-popup.mapboxgl-popup {
+  z-index: 1000; /* Set a higher z-index for the popup */
+}
