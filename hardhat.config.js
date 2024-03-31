@@ -9,8 +9,8 @@ module.exports = {
       chainId: 31337 // Chain ID of your local RPC node
     },
     mumbai: {
-      url: "https://polygon-mumbai.g.alchemy.com/v2/hCEgg_yXjxOc6YpJFmz7K9l48aqP1oJf", // Mumbai Testnet RPC URL
-      accounts: ['3b1633584800e000c60556bae8e6768688bc8190d0e6c16351bd30ebfe87267b']
+      url: "https://polygon-mumbai.g.alchemy.com/v2/<API>", // Mumbai Testnet RPC URL
+      accounts: ['<privaetkey>']
     }
   }
 };

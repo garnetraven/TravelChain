@@ -32,7 +32,7 @@ const Dashboard = () => {
           console.log('Fetching contract instance and user address');
           const accounts = await web3.eth.getAccounts();
           const userAddress = accounts[0];
-          const contractInstance = new web3.eth.Contract(contractABI, '0x5fbdb2315678afecb367f032d93f642f64180aa3');
+          const contractInstance = new web3.eth.Contract(contractABI, '<YourContractAddress>');
           console.log('Contract instance and user address fetched:', contractInstance, userAddress);
   
           // Fetch user images from contract
@@ -61,7 +61,7 @@ const Dashboard = () => {
   
           setUserImages(images);
           setLoading(false);
-          setContractAddress('0x5fbdb2315678afecb367f032d93f642f64180aa3');
+          setContractAddress('YourContractAddress');
           setUserAddress(userAddress);
         } else {
           console.error('MetaMask not detected');
@@ -77,7 +77,7 @@ const Dashboard = () => {
   useEffect(() => {
     if (!map && !loading) {
       // Initialize map only when component mounts and user images are fetched
-      mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FybmV0cmF2ZW4iLCJhIjoiY2xtcXJibWhqMDA4ajJ0bnAxcnF2MTlucSJ9.zHyMo2vWcVfamUH6oBLYqw';
+      mapboxgl.accessToken = '<API_Token>';
       const mapInstance = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',

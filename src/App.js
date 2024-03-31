@@ -10,13 +10,13 @@ import Dashboard from './components/dashboard';
 import './App.css';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAhaTngmLzHAt6WxsIqzmp-7cE3tlrjiCU",
+  apiKey: "",
   authDomain: "smartrewards-b4381.firebaseapp.com",
   projectId: "smartrewards-b4381",
   storageBucket: "smartrewards-b4381.appspot.com",
   messagingSenderId: "765981009167",
   appId: "1:765981009167:web:89f040ab20b9ec45678a7a",
-  measurementId: "G-00K1C2NKWW"
+  measurementId: "<fire>"
 };
 
 // Initialize Firebase

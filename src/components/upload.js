@@ -24,7 +24,7 @@ const Upload = () => {
           await window.ethereum.request({ method: 'eth_requestAccounts' });
           const accounts = await web3.eth.getAccounts();
           setUserAddress(accounts[0]);
-          const contractAddress = '0x5fbdb2315678afecb367f032d93f642f64180aa3'; // Replace with your contract address
+          const contractAddress = '<contract_token>'; // Replace with your contract address
           setContractAddress(contractAddress);
         } else {
           console.error('MetaMask not detected');
